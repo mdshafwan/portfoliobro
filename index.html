@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Mohammed Shafwan - AI/ML Engineer specializing in machine learning, data science, and intelligent automation solutions. Expert in Python, TensorFlow, and PyTorch.">
+   <meta name="theme-color" content="#ff4d6d">
+   <meta name="author" content="Mohammed Shafwan">
+   
+   <!--=============== PWA TAGS ===============-->
+   <link rel="manifest" href="/manifest.json">
+   <meta name="mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+   <meta name="apple-mobile-web-app-title" content="M. Shafwan">
+   
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+   <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+   <!--=============== PRELOAD CRITICAL FONTS ===============-->
+   <link rel="preload" href="assets/fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="assets/fonts/poppins-500.woff2" as="font" type="font/woff2" crossorigin>
+   
+   <!--=============== CRITICAL CSS INLINE ===============-->
+   <style>
+      *{box-sizing:border-box;padding:0;margin:0}
+      html{scroll-behavior:smooth}
+      body{
+         font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+         font-size:.938rem;
+         background-color:hsl(228,15%,20%);
+         color:hsl(228,8%,65%);
+         margin:0;
+      }
+      .header{position:fixed;width:100%;top:0;left:0;background-color:hsl(228,15%,15%);z-index:100}
+      .container{max-width:1120px;margin-inline:1.5rem}
+      .home{min-height:100vh;background-color:hsl(228,15%,15%)}
+      .section{padding-block:5rem 2rem}
+      h1,h2,h3,h4{color:hsl(228,8%,95%);font-weight:500}
+      a{text-decoration:none}
+      img,svg{max-width:100%;height:auto}
+      .grid{display:grid;gap:1.5rem}
+   </style>
+
+   <!--=============== MAIN CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <!--=============== REMIXICONS - DEFERRED ===============-->
+   <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"></noscript>
+
+   <title>Mohammed Shafwan | AI/ML Engineer Portfolio</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container" aria-label="Main navigation">
+         <a href="#" class="nav__logo" aria-label="Homepage">
+            Mohammed <span>Shafwan</span>
+         </a>
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+               <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+               <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+               <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+               <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+               <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+
+            <div class="nav__close" id="nav-close" aria-label="Close menu">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+
+         <div class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <!-- LEFT SIDE: Content + Social -->
+            <div class="home__content">
+               <div class="home__data">
+                  <h3 class="home__subtitle">
+                     Hello, <span>I'm</span>
+                  </h3>
+                  <h1 class="home__title">Mohammed Shafwan</h1>
+                  <h3 class="home__education">AI/ML Engineer</h3>
+                  <p class="home__description">
+                     I'm an AI / ML Engineer passionate about turning data into intelligent systems that solve real‑world problems.
+                     I design and train machine‑learning models, fine‑tune algorithms, and deploy scalable solutions that bridge data science and software engineering.
+                  </p>
+                  <a href="#contact" class="button">Contact Me</a>
+               </div>
+
+               <div class="home__social">
+                  <a href="https://www.linkedin.com/in/mohammed-shafwan-83947a199" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="LinkedIn Profile">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+                  <a href="https://github.com/mdshafwan" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="GitHub Profile">
+                     <i class="ri-github-line"></i>
+                  </a>
+                  <a href="https://discord.com/users/664995015704969226" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="Discord Profile">
+                     <i class="ri-discord-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- RIGHT SIDE: Image -->
+            <div class="home__image">
+               <svg class="home__blob" viewBox="0 0 550 591" width="550" height="591" xmlns="http://www.w3.org/2000/svg" aria-labelledby="homeImageTitle">
+                  <title id="homeImageTitle">Mohammed Shafwan Profile Picture</title>
+                  <mask id="maskBlob" mask-type="alpha">
+                     <path d="M263 25C270.426 20.7 279.574 20.7 287 25L501.157 170.822C508.583 175.109 
+                              513.157 183.032 513.157 191.606V438.894C513.157 447.468 508.583 455.391 
+                              501.157 459.678L287 583.322C279.574 587.609 270.426 587.609 263 583.322
+                              L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 438.894V191.606
+                              C36.843 183.032 41.4174 175.109 48.843 170.822L263 25Z"/>
+                  </mask>
+
+                  <g mask="url(#maskBlob)">
+                     <path d="M263 25C270.426 20.7 279.574 20.7 287 25L501.157 170.822C508.583 175.109 
+                              513.157 183.032 513.157 191.606V438.894C513.157 447.468 508.583 455.391 
+                              501.157 459.678L287 583.322C279.574 587.609 270.426 587.609 263 583.322
+                              L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 438.894V191.606
+                              C36.843 183.032 41.4174 175.109 48.843 170.822L263 25Z"/>
+
+                     <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                  </g>
+
+                  <defs>
+                     <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 -0.05)"/>
+                     </pattern>
+
+                     <image
+                        class="home__img"
+                        id="imageBlob"
+                        width="640"
+                        height="925"
+                        href="assets/img/shafwan.jpeg"
+                     />
+                  </defs>
+               </svg>
+            </div>
+
+            <!-- BOTTOM: Scroll Down -->
+            <a href="#about" class="home__scroll" aria-label="Scroll to About section">
+               <i class="ri-mouse-line home__scroll-icon"></i>
+               <span class="home__scroll-name">Scroll Down</span>
+            </a>
+         </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+         <div class="about__container container grid">
+            <div class="about__data">
+               <h3 class="section__subtitle">
+                  <span>About </span>Me
+               </h3>
+               <h2 class="section__title">About Me</h2>
+               <p class="about__description">
+                  I'm passionate about turning complex data into intelligent, actionable solutions. With a strong foundation in machine learning, I enjoy building models that bridge the gap between raw information and meaningful insight. Over the past year in Research and Development, I've focused on integrating ERP and CRM systems with intelligent automation—streamlining business workflows and enhancing decision‑making through predictive analytics.
+               </p>
+               <a href="#contact" class="button">Let's Talk</a>
+            </div>
+
+            <div class="about__image">
+               <svg class="about__blob" viewBox="0 0 550 592" width="550" height="592" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="aboutImageTitle">
+                  <title id="aboutImageTitle">Mohammed Shafwan Professional Photo</title>
+                  <mask id="maskBorder" mask-type="alpha">
+                     <path
+                        d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 171.822C508.583 176.109 
+                           513.157 184.032 513.157 192.606V439.894C513.157 448.468 508.583 456.391 501.157 460.678
+                           L287 584.322C279.574 588.609 270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 
+                           36.843 448.468 36.843 439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
+                        fill="white"
+                     />
+                  </mask>
+
+                  <g mask="url(#maskBorder)">
+                     <image
+                        class="about__img"
+                        href="assets/img/shafwan.jpeg"
+                        width="550"
+                        height="592"
+                        transform="scale(0.9) translate(30, 30)"
+                        preserveAspectRatio="xMidYMid slice"
+                     />
+                  </g>
+
+                  <path
+                     d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                        192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
+                        580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
+                        40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
+                        175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+                     stroke="black"
+                     stroke-width="8"
+                  />
+               </svg>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+         <h3 class="section__subtitle"><span>Skills</span></h3>
+         <h2 class="section__title">Research & Technical Expertise</h2>
+         
+         <div class="skills__container container grid">
+            
+            <article class="skills__content">
+               <div class="skills__header">
+                  <i class="ri-brain-line skills__icon" aria-hidden="true"></i>
+                  <div>
+                     <h3 class="skills__title">Artificial Intelligence / ML</h3>
+                     <span class="skills__subtitle">Research-oriented</span>
+                  </div>
+               </div>
+
+               <div class="skills__list grid">
+                  <div class="skills__item"><span>Python / NumPy / Pandas</span></div>
+                  <div class="skills__item"><span>Scikit-learn / TensorFlow / PyTorch</span></div>
+                  <div class="skills__item"><span>Computer Vision / NLP</span></div>
+                  <div class="skills__item"><span>Data Preprocessing / Feature Engineering</span></div>
+               </div>
+            </article>
+
+            <article class="skills__content">
+               <div class="skills__header">
+                  <i class="ri-flask-line skills__icon" aria-hidden="true"></i>
+                  <div>
+                     <h3 class="skills__title">Research & Data Science</h3>
+                     <span class="skills__subtitle">Model building & analysis</span>
+                  </div>
+               </div>
+
+               <div class="skills__list grid">
+                  <div class="skills__item"><span>Statistical Analysis / Hypothesis Testing</span></div>
+                  <div class="skills__item"><span>Exploratory Data Analysis (EDA)</span></div>
+                  <div class="skills__item"><span>Matplotlib / Seaborn / Plotly</span></div>
+                  <div class="skills__item"><span>Paper Writing / Model Documentation</span></div>
+               </div>
+            </article>
+
+            <article class="skills__content">
+               <div class="skills__header">
+                  <i class="ri-code-line skills__icon" aria-hidden="true"></i>
+                  <div>
+                     <h3 class="skills__title">Development & Tools</h3>
+                     <span class="skills__subtitle">For experiments & deployment</span>
+                  </div>
+               </div>
+
+               <div class="skills__list grid">
+                  <div class="skills__item"><span>Git / GitHub</span></div>
+                  <div class="skills__item"><span>FastAPI / Flask / Django</span></div>
+                  <div class="skills__item"><span>Jupyter / VS Code / Colab</span></div>
+                  <div class="skills__item"><span>Model Deployment / Streamlit / AWS</span></div>
+               </div>
+            </article>
+            
+         </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+         <h3 class="section__subtitle"><span>What I Offer</span></h3>
+         <h2 class="section__title">Services</h2>
+         <div class="services__container container grid">
+            
+            <article class="services__card">
+               <i class="ri-brain-line services__icon" aria-hidden="true"></i>
+               <h3 class="services__title">AI Research & Model Development</h3>
+               <p class="services__description">
+                  Designing and developing machine learning and deep learning models for real-world applications such as computer vision, NLP, and predictive analytics.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-bar-chart-box-line services__icon" aria-hidden="true"></i>
+               <h3 class="services__title">Data Analysis & Insights</h3>
+               <p class="services__description">
+                  Turning raw data into valuable insights through data cleaning, visualization, and statistical modeling using Python, Pandas, and Matplotlib.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-cpu-line services__icon" aria-hidden="true"></i>
+               <h3 class="services__title">AI System Integration</h3>
+               <p class="services__description">
+                  Integrating AI models into production-ready applications using FastAPI, Flask, or Django REST Framework for seamless deployment and scalability.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-flask-line services__icon" aria-hidden="true"></i>
+               <h3 class="services__title">Research Automation</h3>
+               <p class="services__description">
+                  Building automation tools and scripts to speed up data experiments, model testing, and research workflows efficiently.
+               </p>
+            </article>
+
+            <article class="services__card">
+               <i class="ri-code-s-slash-line services__icon" aria-hidden="true"></i>
+               <h3 class="services__title">Full-Stack Solutions</h3>
+               <p class="services__description">
+                  Developing and connecting backend APIs with modern frontend frameworks for analytics dashboards, ERPs, and AI-driven platforms.
+               </p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h3 class="section__subtitle"><span>Portfolio</span></h3>
+         <h2 class="section__title">Projects</h2>
+         <div class="projects__container container grid">
+
+            <article class="projects__card">
+               <div class="projects__data">
+                  <h3 class="projects__title">Jewellery ERP</h3>
+                  <p class="projects__description">
+                     End-to-end ERP software designed for jewellery retailers — covering stock management, sales, repairs, and financial integration.
+                  </p>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <div class="projects__data">
+                  <h3 class="projects__title">Pawn Broking System</h3>
+                  <p class="projects__description">
+                     A secure and efficient platform to manage pawn loans, interest calculations, renewals, and auction tracking for jewellery businesses.
+                  </p>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <div class="projects__data">
+                  <h3 class="projects__title">Gold Chit Fund Management</h3>
+                  <p class="projects__description">
+                     A chit-based finance module to manage gold savings schemes, installments, and customer tracking with automated accounting.
+                  </p>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <div class="projects__data">
+                  <h3 class="projects__title">Customer CRM</h3>
+                  <p class="projects__description">
+                     Smart CRM tailored for jewellery retailers to manage customer interactions, loyalty programs, and marketing insights.
+                  </p>
+               </div>
+            </article>
+
+            <article class="projects__card">
+               <div class="projects__data">
+                  <h3 class="projects__title">Digi Gold ERP</h3>
+                  <p class="projects__description">
+                     A digital gold management platform enabling customers to buy, store, and redeem gold with complete transaction transparency.
+                  </p>
+               </div>
+            </article>
+
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h3 class="section__subtitle"><span>Get In Touch</span></h3>
+         <h2 class="section__title">Contact Me</h2>
+         <div class="contact__container container grid">
+            <div class="contact__info">
+               <article class="contact__card">
+                  <i class="ri-mail-line contact__card-icon" aria-hidden="true"></i>
+                  <h3 class="contact__card-title">Email</h3>
+                  <span class="contact__card-data">mdshafwan14@gmail.com</span>
+                  <a href="mailto:mdshafwan14@gmail.com" class="contact__button">
+                     Write me <i class="ri-arrow-right-line contact__button-icon"></i>
+                  </a>
+               </article>
+
+               <article class="contact__card">
+                  <i class="ri-phone-line contact__card-icon" aria-hidden="true"></i>
+                  <h3 class="contact__card-title">Phone</h3>
+                  <span class="contact__card-data">+91 6379251286</span>
+                  <a href="tel:+916379251286" class="contact__button">
+                     Call now <i class="ri-arrow-right-line contact__button-icon"></i>
+                  </a>
+               </article>
+
+               <article class="contact__card">
+                  <i class="ri-map-pin-line contact__card-icon" aria-hidden="true"></i>
+                  <h3 class="contact__card-title">Location</h3>
+                  <span class="contact__card-data">Dharapuram, India</span>
+               </article>
+            </div>
+
+            <!-- Contact Form with Validation -->
+            <form id="contact-form" class="contact__form" novalidate>
+               <!-- Name Field -->
+               <div class="contact__form-div">
+                  <label for="contact-name" class="contact__form-label">
+                     <i class="ri-user-line"></i> Your Name
+                  </label>
+                  <input 
+                     type="text" 
+                     id="contact-name" 
+                     name="from_name" 
+                     placeholder="Enter your full name" 
+                     class="contact__form-input"
+                     minlength="3"
+                     maxlength="50"
+                     required
+                  >
+                  <span class="contact__form-error" id="name-error"></span>
+               </div>
+
+               <!-- Email Field -->
+               <div class="contact__form-div">
+                  <label for="contact-email" class="contact__form-label">
+                     <i class="ri-mail-line"></i> Your Email
+                  </label>
+                  <input 
+                     type="email" 
+                     id="contact-email" 
+                     name="from_email" 
+                     placeholder="youremail@example.com" 
+                     class="contact__form-input"
+                     required
+                  >
+                  <span class="contact__form-error" id="email-error"></span>
+               </div>
+
+               <!-- Subject Field -->
+               <div class="contact__form-div">
+                  <label for="contact-subject" class="contact__form-label">
+                     <i class="ri-bookmark-line"></i> Subject
+                  </label>
+                  <input 
+                     type="text" 
+                     id="contact-subject" 
+                     name="subject" 
+                     placeholder="What's this about?" 
+                     class="contact__form-input"
+                     minlength="5"
+                     maxlength="100"
+                  >
+                  <span class="contact__form-error" id="subject-error"></span>
+               </div>
+
+               <!-- Message Field -->
+               <div class="contact__form-div contact__form-area">
+                  <label for="contact-message" class="contact__form-label">
+                     <i class="ri-message-2-line"></i> Your Message
+                  </label>
+                  <textarea 
+                     id="contact-message" 
+                     name="message" 
+                     placeholder="Write your message here..." 
+                     class="contact__form-input"
+                     minlength="10"
+                     maxlength="500"
+                     rows="6"
+                     required
+                  ></textarea>
+                  <span class="contact__form-error" id="message-error"></span>
+                  <span class="contact__form-counter" id="message-counter">0/500</span>
+               </div>
+
+               <!-- Submit Button -->
+               <button type="submit" class="button" id="submit-btn">
+                  <span class="button__text">Send Message</span>
+                  <i class="ri-send-plane-fill button__icon"></i>
+               </button>
+
+               <!-- Success/Error Messages -->
+               <div class="contact__form-message" id="form-message"></div>
+            </form>
+         </div>
+      </section>
+   </main>
+
+   <!--==================== FOOTER ====================-->
+   <footer class="footer">
+      <div class="footer__container container">
+         <div> 
+            <h2 class="footer__title">Mohammed<span>Shafwan</span></h2>
+            <p class="footer_education">AI/ML Engineer</p>
+         </div>
+         
+         <div class="footer__social">
+            <a href="https://www.instagram.com/_wolf_trickster_?igsh=MTM2dHh4dWx0N3UyNQ==" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+               <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1B1QDe9MrR/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Facebook">
+               <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://t.me/Onlinemagician" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Telegram">
+               <i class="ri-telegram-line"></i>
+            </a>
+         </div>
+         
+         <span class="footer__copy">© 2025 Mohammed Shafwan. All rights reserved</span>
+      </div>
+   </footer>
+
+   <!--========== SCROLL UP ==========-->
+   <a href="#" class="scrollup" id="scroll-up" aria-label="Scroll to top">
+      <i class="ri-arrow-up-line scrollup__icon"></i>
+   </a>
+
+   <!--=============== SCROLLREVEAL ===============-->
+   <script src="https://unpkg.com/scrollreveal" defer></script>
+
+   <!--=============== EMAIL JS ===============-->
+   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js" defer></script>
+</body>
+</html>
